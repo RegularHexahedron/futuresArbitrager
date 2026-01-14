@@ -7,7 +7,7 @@ Connection credentials.
 from pyRofex import Environment, Market
 
 USER = "xxxxxxx"
-PASSWORD = "xxxxxxx$"
+PASSWORD = "xxxxxxx"
 ACCOUNT = "xxxxxxx"
 ENVIRONMENT = Environment.REMARKET
 MARKET = Market.ROFEX
