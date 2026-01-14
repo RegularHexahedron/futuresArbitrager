@@ -152,7 +152,7 @@ $$
 \end{equation*}
 $$
 
-Ignoring transaction costs, the PnL of the arbitrage is just the difference between the net interest rate $rt$ times the amount $n$ of the lend and borrow sides. That is
+Ignoring transaction costs, the PnL of the arbitrage is just the difference between the net interest rate $rt$ times the amount $N$ of the lend and borrow legs. That is
 
 $$
 \begin{align*}
