@@ -40,7 +40,7 @@ They are hardcoded for simplicity, to have full control of a couple of assets.
 
 - The bot does not execute trades; only detects opportunities.
 - The underlying spot price is considered to be a single price (no bid/ask spread).
-- Underlying's iquidity is assumed to be infinite at spot.
+- Underlying's liquidity is assumed to be infinite at spot.
 - Transaction costs, fees, and slippage are ignored.
 - Minimum and maximum trade sizes for both the future and its underlying are not enforced.
 - No margin requirements or funding constraints are taken into account.
@@ -86,7 +86,7 @@ By buying (selling) the underlying and buying (selling) the future, we are effec
 
 $$
 \begin{equation*}
-        r_{\mathrm{lend}}
+        r
     =
         \frac{1}{T}
         \ln\left(
@@ -135,7 +135,7 @@ $$
 
 Arbitraging futures consists on taking both a lender and a borrower position at favorable rates.
 
-For the arbitrage to be fully self-financed, we ask that the amount lent is lesser and returned sooner than the amount borrowed has to be paid.
+For the arbitrage to be fully self-financed, we require that the lending is of lesser amount and returned sooner than the borrowing.
 
 $$
 \begin{equation*}
@@ -153,7 +153,7 @@ $$
 \end{equation*}
 $$
 
-Ignoring transaction costs, the PnL of the arbitrage is just the difference between the net interest rate $rt$ times the amount $N$ of the lend and borrow legs. That is
+Ignoring transaction costs, the PnL of the arbitrage is just the difference between the *net interest rate* $rT$ times the amount $N$ of the lend and borrow legs. That is
 
 $$
 \begin{align*}
